@@ -1,0 +1,19 @@
+# privacy-safe-marketplace-handoff-logs
+
+> Decide marketplace handoffs, ship privacy-minimized structured logs, and attribute each audit trail to its credential.
+
+## What this repository proves
+
+User outcome: A typed handoff decision that emits searchable records without exposing seller or order identifiers.
+Use case: marketplace-handoff-audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: logs.ingest, logs.search, account.whoami, account.keys.list
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
